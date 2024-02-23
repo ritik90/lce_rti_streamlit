@@ -1,0 +1,29 @@
+artifact_path: pipeline
+databricks_runtime: 12.1.x-cpu-ml-scala2.12
+flavors:
+  python_function:
+    cloudpickle_version: 2.0.0
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.pyfunc.model
+    python_model: python_model.pkl
+    python_version: 3.9.5
+mlflow_version: 2.5.0
+model_uuid: 3588f1d6d83843ff9be88589ac6b8760
+run_id: 96d8d59cf182445ba0ffb1c82bcb4293
+signature:
+  inputs: '[{"type": "string", "name": "dms_dlr_pincode"}, {"type": "string", "name":
+    "dms_cust_city"}, {"type": "string", "name": "dms_cust_pincode"}, {"type": "double",
+    "name": "proximity"}, {"type": "double", "name": "dlr_lat"}, {"type": "string",
+    "name": "enq_veh_color"}, {"type": "double", "name": "dayofyear_y"}, {"type":
+    "double", "name": "enq_hour"}, {"type": "string", "name": "enq_veh_variant"},
+    {"type": "string", "name": "dms_dlr_town"}, {"type": "double", "name": "avg_spent_by_pincode"},
+    {"type": "double", "name": "dayofyear_x"}, {"type": "string", "name": "dms_dlr_territory"},
+    {"type": "double", "name": "ex_showroom_price"}, {"type": "string", "name": "dms_cust_state"},
+    {"type": "double", "name": "dlr_cnt"}, {"type": "string", "name": "town_class"},
+    {"type": "string", "name": "Dealer_Type"}, {"type": "double", "name": "day_x"},
+    {"type": "long", "name": "len_name"}, {"type": "string", "name": "enq_veh_model"},
+    {"type": "double", "name": "day_y"}]'
+  outputs: '[{"type": "tensor", "tensor-spec": {"dtype": "float64", "shape": [-1]}}]'
+utc_time_created: '2023-07-18 05:43:08.301537'
